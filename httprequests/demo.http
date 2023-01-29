@@ -1,0 +1,24 @@
+GET http://localhost:8000/
+
+###
+GET http://localhost:8000/api/users/1
+
+###
+POST http://localhost:8000/api/users/
+Content-Type: application/json
+
+{
+    "name": "name2",
+    "username": "username2",
+    "email": "test2@email.com"
+}
+
+###
+PUT http://localhost:8000/api/users/1
+Content-Type: application/json
+
+{
+    "name": "editedname",
+    "username": "username",
+    "email": "test@email.com"
+}
